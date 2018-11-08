@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
     <h1>Recent Posts</h1>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <>
-      <Link key={node.id} to={node.frontmatter.path} style={{
+      <Link key={node.id} to={node.fields.slug} style={{
         textDecoration: 'none'
       }}>
         <div>
@@ -43,10 +43,12 @@ export const query = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            path
           }
           excerpt
         }
