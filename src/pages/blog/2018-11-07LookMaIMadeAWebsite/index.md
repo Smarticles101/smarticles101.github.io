@@ -1,5 +1,4 @@
 ---
-path: "/blog/2018-11-07LookMaIMadeAWebsite"
 date: "2018-11-07"
 title: "Look ma I made a website"
 ---

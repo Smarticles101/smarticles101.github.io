@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => (
     <ul>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <li key={node.id}>
-          <Link to={node.frontmatter.path}>
+          <Link to={node.fields.slug}>
             {node.frontmatter.title}
           </Link>
         </li>
@@ -70,11 +70,13 @@ export const query = graphql`
       totalCount
       edges {
         node {
+          fields {
+            slug
+          }
           id
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
-            path
           }
           excerpt
         }
