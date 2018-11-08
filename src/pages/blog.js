@@ -5,6 +5,11 @@ import { Link, graphql } from 'gatsby';
 
 const IndexPage = ({ data }) => (
   <Layout title="Blog">
+    <Link
+      to="/blog/rss.xml"
+    >
+      Subscribe with rss
+    </Link>
     <h1>Recent Posts</h1>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <>
