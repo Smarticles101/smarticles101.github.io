@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 08 Nov 2018 19:26:50 GMT</lastBuildDate><item><title><![CDATA[Look ma I made a website]]></title><description><![CDATA[Poof, a website appeared! Cool right? I actually had a website before this.
+It looked kinda similar with the same colors and footer.
+The…]]></description><link>https://loganstucki.me//blog/2018-11-07LookMaIMadeAWebsite</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-07LookMaIMadeAWebsite</guid><pubDate>Wed, 07 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Poof, a website appeared!&lt;/p&gt;
+&lt;p&gt;Cool right?&lt;/p&gt;
+&lt;p&gt;I actually had a website before this.
+It looked kinda similar with the same colors and footer.
+The header was a little different,
+but the rest was remade. &lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;Because I took a look at it right after making it (literally yesterday) and was like
+&quot;Well, this website is actually awful&quot;
+and so I remade it.&lt;/p&gt;
+&lt;p&gt;The old website can be found &lt;a href=&quot;https://github.com/Smarticles101/loganstucki.me&quot;&gt;here&lt;/a&gt;
+if you really want to see it. It&apos;s made with ReactJS using create-react-app.
+I spent about a week on it working on it in my free time.&lt;/p&gt;
+&lt;p&gt;This website uses React as well, but it also uses GatsbyJS.
+I looked into using something like Jekyll, cause I wanted a blog
+and I wanted static content because React just manipulates the DOM dynamically.&lt;/p&gt;
+&lt;p&gt;GatsbyJS does just this and as a plus, it used most of my existing React code
+to run. Neat right?&lt;/p&gt;
+&lt;p&gt;I installed a plugin to parse markdown. Gatsby utilizes GraphQL (the coveted
+query language that developers are hyped up about) for stuff. I don&apos;t know GraphQL that well.
+As of before today, I had never used it before. Luckily, Gatsby has really good docs
+with lots of examples for different senarios. That really helped me alot.&lt;/p&gt;
+&lt;p&gt;So yeah, now I have this new website. Pretty nifty. Press one of the little contact
+buttons in the footer to get in touch. Also, if you&apos;ve somehow managed to get through
+the site and read through this entire post, send me some feedback on the site.&lt;/p&gt;
+&lt;p&gt;Until next time, signing off - Logan&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; reversee &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Expect to see some blogs with code in them&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;reverse&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;reversee&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
