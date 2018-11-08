@@ -49,15 +49,6 @@ const IndexPage = ({ data }) => (
       }
     </ul>
 
-    <hr />
-
-    <h4>Website Todo:</h4>
-    <ul>
-      <li>Add rss feed for blog subscribers</li>
-      <li>Post to blog</li>
-      <li>Find more things to do</li>
-    </ul>
-
   </Layout>
 )
 
