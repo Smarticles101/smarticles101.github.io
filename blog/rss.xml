@@ -1,4 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 09 Nov 2018 18:19:06 GMT</lastBuildDate><item><title><![CDATA[Github pages user page branch setup]]></title><description><![CDATA[So, setting up my new site, I decided to use github pages
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 09 Nov 2018 21:39:25 GMT</lastBuildDate><item><title><![CDATA[That Time I Hacked a Quiz and Won 2.5k]]></title><description><![CDATA[So, you might be wondering about something I mention on
+the home page. hack an online stem trivia quiz and win lots of money even though I…]]></description><link>https://loganstucki.me//blog/2018-11-09ThatTimeIHackedAQuizAndWon2.5k/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-09ThatTimeIHackedAQuizAndWon2.5k/</guid><pubDate>Fri, 09 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;So, you might be wondering about something I mention on
+the home page.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hack an online stem trivia quiz and win lots of money even though I told them I hacked it&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is about that story...&lt;/p&gt;
+&lt;h3&gt;How it all started&lt;/h3&gt;
+&lt;p&gt;It was spring semester of sophmore year. Almost two years ago as of now.
+I was sitting in semminar, an extra class we had to work on assignments,
+visit teachers, and the like. My seminar class was in one of the engineering
+rooms, so kids would often come in and work on their engineering assignments.&lt;/p&gt;
+&lt;p&gt;Anyways, as I was sitting, I noticed some of my friends in engineering
+huddled around a computer. There was a lively buzz about them so I went over
+to check out what they were doing.&lt;/p&gt;
+&lt;p&gt;I found that they were on some &quot;STEM Trivia Quiz&quot; site. What I learned about
+it was just what other people had told me, but basically it was just for our
+school and was apparently sponsored by some big people.&lt;/p&gt;
+&lt;p&gt;I thought it was cool and put a thought in the back of my mind to try it later.&lt;/p&gt;
+&lt;p&gt;Later, when I was sitting in my computer science class, our teacher
+informed all of us about it and invited us to participate if we liked.
+I took this opportunity to try it. As it turns out, I was not very good
+at it. There were many math and general science questions that I was not
+expecting. I was just expecting engineering/computer science related stuff.&lt;/p&gt;
+&lt;p&gt;I decided to mess around with the site for a bit and dug through some of
+their code in the chrome developer tools. Their site was written
+in Vue.js. I found I could manipulate parts of the quiz by accessing members
+of the &lt;code class=&quot;language-text&quot;&gt;vue&lt;/code&gt; object.&lt;/p&gt;
+&lt;p&gt;I came up with an idea for a program that I could use to bot the site.
+It would essentially run like this.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// not the exact code&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// obviously wont work&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// just here to demonstrate logic&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// this script would get injected&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// into the page by a chrome extension&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; questions &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// botLogic was called using a mutation observer&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// don&apos;t remember how that worked cause it was two&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// years ago and the only time i&apos;ve used one&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;botLogic&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mainScreen&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;clickStart&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;adScreen&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;setTimer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;clickContinue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;leaderBoard&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;clickContinue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;question&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// the magic happens here&lt;/span&gt;
+        
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; answers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;blahblahblah&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;codetogetanswerelements&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerHTML&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;questions&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;question&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; a &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; question&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;wrongAnswers&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                answers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;answers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token function&quot;&gt;clickAnswer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;answers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; answers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;wrongAnswer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            questions&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;question&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;wrongAnswers&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;answer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;questions&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;question&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            questions&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;question&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;id&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; question&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token function&quot;&gt;clickToNextPage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Basically, the code clicked through the less-important
+stuff but when it got to a question, if it had seen it before,
+it would choose a random answer based off what it knew was wrong.
+If it hadn&apos;t seen it, it would choose randomly and then update it&apos;s knowledge.&lt;/p&gt;
+&lt;p&gt;This seemingly worked pretty well cause every question had a unique
+id and the dataset was only a couple hundred large. The program did have a bug
+though where the learning for some reason didn&apos;t work because when I accessed the
+DOM, those values did not reflect the actual html. So essentially, the program
+was just choosing randomly.&lt;/p&gt;
+&lt;p&gt;I ran this next time I was in semminar just to show off a little. One kid
+thought it was pretty cool and asked if he could have it. Being the nice person I am,
+I obfuscated the code and then gave it to him.&lt;/p&gt;
+&lt;p&gt;His computer was much faster than the free computer I got off facebook, so,
+he ran it all night and soon surpassed my lead and got first place with a perfect score.&lt;/p&gt;
+&lt;p&gt;I decided to build another bot that could surpass his. He got a perfect score though
+so how is it possible? Well, the website fetched 80 questions back from the server
+and only 79 of those could be answered. The site would break when you tried to answer
+number 80. So, he had a score of 79000, but I was going to try and get a score of
+80000.&lt;/p&gt;
+&lt;p&gt;I dug through the code some more, to understand how their script worked
+and re-write my own version of it. I found their API calls and eventually found the
+call to submit an answer, which would benefit me greatly.&lt;/p&gt;
+&lt;p&gt;I ran it in the console a few times to test it while I had a quiz running.
+Then, as soon as the quiz ended I had a score given to me. I tried this a few
+more times, and realized a few key things.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Their server did not prevent you from answering a question
+multiple times.&lt;/li&gt;
+&lt;li&gt;It also didn&apos;t randomize answers, each answer had a unique
+id which was always the same.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, just for fun, I tried something. I had learned the correct answer to
+question id 1 was &lt;code class=&quot;language-text&quot;&gt;A1&lt;/code&gt;, so I threw together a while true loop in chrome
+that looked something like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`/submitAnswer`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        method&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;POST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        body&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            id&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            answer&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;A1&apos;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Of course, infinite loops are not good, so I let it
+run for a while and then forced chrome to close.&lt;/p&gt;
+&lt;p&gt;I went and checked the leaderboard. I was first place but with a score massively
+higher than anyone elses. So, next thing I did was run the loop about ten more
+times just because I could to fill up the top ten on the leaderboard.&lt;/p&gt;
+&lt;p&gt;I felt cool for a while and some people were mad, but of course it was all just a game right.&lt;/p&gt;
+&lt;p&gt;Fast forward to about a year ago.&lt;/p&gt;
+&lt;p&gt;It was just a normal day and I got a text from some phone number.
+The text explained that I had won $2,500 from the STEM Trivia Quiz I had participated in
+they assured me it was no joke and they also sent me an email.
+I sent them my address as they asked.&lt;/p&gt;
+&lt;p&gt;I thought about if they had known what I did. They must have right?
+I was the only person with a score anywhere near that high. I was an outlier.&lt;/p&gt;
+&lt;p&gt;The next day I emailed them explaining everything that happened.&lt;/p&gt;
+&lt;p&gt;No response. But a few weeks later they did respond. To. That. Same. Email. I. Sent. Them.&lt;/p&gt;
+&lt;p&gt;They asked if I had gotten the check yet. (Whattt?). I told them I had,
+and they asked for a picture of me holding it. I sent them one a few weeks late cause I forgot.
+They thanked me, and I haven&apos;t heard
+from them since.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github pages user page branch setup]]></title><description><![CDATA[So, setting up my new site, I decided to use github pages
 instead of hosting it on my server. Why? GitHub pages is free I can deploy my…]]></description><link>https://loganstucki.me//blog/2018-11-08GithubPagesUserPageBranchSetup/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-08GithubPagesUserPageBranchSetup/</guid><pubDate>Thu, 08 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;So, setting up my new site, I decided to use github pages
 instead of hosting it on my server.&lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
