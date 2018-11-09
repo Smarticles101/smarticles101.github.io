@@ -13,22 +13,22 @@ const IndexPage = ({ data }) => (
     <h1>Recent Posts</h1>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <>
-      <Link key={node.id} to={node.fields.slug} style={{
-        textDecoration: 'none'
-      }}>
-        <div>
-          <h3 style={{marginBottom: 0}}>
-            {node.frontmatter.title}
-          </h3>
-          <h5>
-            {node.frontmatter.date}
-          </h5>
-          <p>
-            {node.excerpt}
-          </p>
-        </div>
-      </Link>
-      <hr />
+        <Link key={node.id} to={node.fields.slug} style={{
+          textDecoration: 'none'
+        }}>
+          <div>
+            <h3 style={{marginBottom: 0}}>
+              {node.frontmatter.title}
+            </h3>
+            <h5>
+              {node.frontmatter.date}
+            </h5>
+            <p>
+              {node.excerpt}
+            </p>
+          </div>
+        </Link>
+        <hr />
       </>
     ))}
   </Layout>
