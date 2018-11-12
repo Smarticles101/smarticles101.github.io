@@ -29,8 +29,6 @@ const IndexPage = ({ data }) => (
     <p>
       Yeah that's it, mostly just GitHub. I put most of my code on GitHub.
     </p>
-
-    <h3><a href="/resume.pdf">Resume</a></h3>
     
     <h2>Blog</h2>
     <p>Most recent from the blog:</p>

@@ -61,7 +61,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className="copy">
+        <div>
           {/**
             * Hehehehehe copyrighted forevermore
           */}
@@ -72,7 +72,7 @@ const Footer = () => {
           flex: 1,
           textAlign: 'right'
         }}>
-          :)
+          <a href="/resume.pdf">Resume</a>
         </div>
       </div>
     </footer>
