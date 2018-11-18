@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 12 Nov 2018 21:18:12 GMT</lastBuildDate><item><title><![CDATA[Why I Decided to Blog]]></title><description><![CDATA[Here's a short post. Why did I decide to blog? There's a couple of reasons. Lots of developers blog It's like journaling but public I felt…]]></description><link>https://loganstucki.me//blog/2018-11-12WhyIDecidedToBlog/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-12WhyIDecidedToBlog/</guid><pubDate>Mon, 12 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here&apos;s a short post.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 18 Nov 2018 00:56:05 GMT</lastBuildDate><item><title><![CDATA[Learning go and stuff]]></title><description><![CDATA[I've been looking at learning Go for a few days now. It feels similar to the time I've spent learning C++, but
+the syntax feels more python…]]></description><link>https://loganstucki.me//blog/2018-11-17LearningGoAndStuff/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-17LearningGoAndStuff/</guid><pubDate>Sat, 17 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I&apos;ve been looking at learning Go for a few days now.&lt;/p&gt;
+&lt;p&gt;It feels similar to the time I&apos;ve spent learning C++, but
+the syntax feels more python-like in a way.&lt;/p&gt;
+&lt;p&gt;I&apos;ve started finding it easier to pick up new languages.
+Learning the syntax isn&apos;t an issue as long as I have examples
+to follow, and most of the core concepts are the same
+between languages.&lt;/p&gt;
+&lt;p&gt;The hard part of learning a new programming language, or really
+just programming in general is finding out what you want to
+code. I always want to code stuff but never feel like I have
+great ideas. I remembered project euler and decided that would
+be a fun thing to work on. So, I&apos;ve been working on that some.&lt;/p&gt;
+&lt;p&gt;I already have the first 15 problems solved, the code is hosted
+&lt;a href=&quot;https://github.com/Smarticles101/goEuler&quot;&gt;here&lt;/a&gt; if you want to
+see it.&lt;/p&gt;
+&lt;p&gt;Go has been fun to learn because linting and a package manager
+are built into the command line. It also has code testing
+and benchmarks built in which feels nice having a &quot;standard&quot;
+library for.&lt;/p&gt;
+&lt;p&gt;But yeah, I felt like I needed to give javascript a break for
+a little bit. Maybe I&apos;ll do some more Java stuff soon or write
+something with python cause I never really use that.&lt;/p&gt;
+&lt;p&gt;Anyways that&apos;s it for now, I&apos;ll post again later.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why I Decided to Blog]]></title><description><![CDATA[Here's a short post. Why did I decide to blog? There's a couple of reasons. Lots of developers blog It's like journaling but public I felt…]]></description><link>https://loganstucki.me//blog/2018-11-12WhyIDecidedToBlog/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-12WhyIDecidedToBlog/</guid><pubDate>Mon, 12 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here&apos;s a short post.&lt;/p&gt;
 &lt;p&gt;Why did I decide to blog?&lt;/p&gt;
 &lt;p&gt;There&apos;s a couple of reasons.&lt;/p&gt;
 &lt;ul&gt;
