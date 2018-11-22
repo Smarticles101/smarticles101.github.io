@@ -22,10 +22,6 @@ const Layout = ({ children, title }) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
         >
           <html lang="en" />
         </Helmet>

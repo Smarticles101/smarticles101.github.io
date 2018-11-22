@@ -9,6 +9,9 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout title={"Blog post"}>
+      <Helmet
+        title={frontmatter.title}
+      />
       <h3 style={{marginBottom: 0}}>
         {frontmatter.title}
       </h3>
