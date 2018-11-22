@@ -14,9 +14,7 @@ const IndexPage = ({ data }) => (
       I just made or hack an online stem trivia quiz and win lots of 
       money even though I told them I hacked it. Anyways, I just made this new site
       and I hope to fill it with lots of content. I'll be posting blog updates
-      every now and then about interesting computery things. You'll find
-      most ones for a while will probably primarily be about React because
-      I accidentally fell in love with it. Oops.
+      every now and then about interesting computery things.
     </p>
 
     <h3>Code</h3>
