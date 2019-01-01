@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 22 Nov 2018 21:34:30 GMT</lastBuildDate><item><title><![CDATA[Thanksgiving; My Path to Open Source and Exercism]]></title><description><![CDATA[Today I'm thankful for exercism and my path to open source. I started programming when I was around 12 years old. Not sure what it
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 01 Jan 2019 20:32:29 GMT</lastBuildDate><item><title><![CDATA[My Plans for 2019]]></title><description><![CDATA[Today is the first day of a new year! Tons of fun.
+I'm going to outline some plans for this year. 1. Finish high school One more semester…]]></description><link>https://loganstucki.me//blog/2019-01-01NewYearPlans/</link><guid isPermaLink="false">https://loganstucki.me//blog/2019-01-01NewYearPlans/</guid><pubDate>Tue, 01 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Today is the first day of a new year! Tons of fun.
+I&apos;m going to outline some plans for this year.&lt;/p&gt;
+&lt;h3&gt;1. Finish high school&lt;/h3&gt;
+&lt;p&gt;One more semester left of high school!&lt;/p&gt;
+&lt;p&gt;Classes I&apos;m taking this semester:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AP Calculus AB&lt;/li&gt;
+&lt;li&gt;AP English Literature&lt;/li&gt;
+&lt;li&gt;Choir&lt;/li&gt;
+&lt;li&gt;Economics&lt;/li&gt;
+&lt;li&gt;Ignite/Internship&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&apos;m aiming for a 4 or 5 on my AP Calulus exam, but english
+is a weaker area for me so I&apos;m hoping for a 3.&lt;/p&gt;
+&lt;h3&gt;2. Apply for scholarships&lt;/h3&gt;
+&lt;p&gt;I would like to apply for a bunch of scholarships
+before I head off to college. Hopefully I can get
+people to pay for my education so I don&apos;t drown in
+student loan debt :)&lt;/p&gt;
+&lt;h3&gt;3. Get a summer internship and maybe a part time job&lt;/h3&gt;
+&lt;p&gt;Last summer, I was able to intern with Walmart in
+their infosec department. I&apos;d love to be able to do
+that again in a different area. If this works out, I&apos;d
+probably quit my current job at Sonic. I could also
+potentially turn an internship into a remote job while I&apos;m in college.&lt;/p&gt;
+&lt;h3&gt;4. Be more actively involved in open source&lt;/h3&gt;
+&lt;p&gt;Currently, I am a member of &lt;a href=&quot;https://exercism.io&quot;&gt;exercism&lt;/a&gt;. I
+would like to more actively contribute there, or possibly
+find some smaller projects I can contribute to. I might
+even start my own if I can find a good idea.&lt;/p&gt;
+&lt;h3&gt;5. College&lt;/h3&gt;
+&lt;p&gt;I&apos;ve applied to 3 different colleges for the 2019 fall semester.&lt;/p&gt;
+&lt;p&gt;I&apos;ve chosen BYU as my primary choice, and am currently awaiting an
+admission decision, which I expect in Febuary.&lt;/p&gt;
+&lt;p&gt;BYU-Idaho is my backup, in case BYU doesn&apos;t work out or I don&apos;t
+get the funds for it. Already accepted here.&lt;/p&gt;
+&lt;p&gt;University of Arkansas is my last fallback. If for some reason
+my other options don&apos;t follow through, I&apos;ll go here and stay
+closer to home. I was also already accepted here.&lt;/p&gt;
+&lt;h3&gt;In closing&lt;/h3&gt;
+&lt;p&gt;So yeah those are my plans for 2019 as they currently stand.&lt;/p&gt;
+&lt;p&gt;My main concerns for this year are grades as I finish high school,
+and funding my college education.&lt;/p&gt;
+&lt;p&gt;Wish me luck! :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Thanksgiving: My Path to Open Source and Exercism]]></title><description><![CDATA[Today I'm thankful for exercism and my path to open source. I started programming when I was around 12 years old. Not sure what it
 was, but…]]></description><link>https://loganstucki.me//blog/2018-11-22Thanksgiving-MyPathToOpenSource/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-22Thanksgiving-MyPathToOpenSource/</guid><pubDate>Thu, 22 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Today I&apos;m thankful for exercism and my path to open source.&lt;/p&gt;
 &lt;p&gt;I started programming when I was around 12 years old. Not sure what it
 was, but I just had some driving curiosity to learn programming.
