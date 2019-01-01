@@ -1,6 +1,6 @@
 ---
 date: "2018-11-22"
-title: "Thanksgiving; My Path to Open Source and Exercism"
+title: "Thanksgiving: My Path to Open Source and Exercism"
 ---
 
 Today I'm thankful for exercism and my path to open source.
