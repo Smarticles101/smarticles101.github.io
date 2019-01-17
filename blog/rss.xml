@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 17 Jan 2019 18:25:41 GMT</lastBuildDate><item><title><![CDATA[My Plans for 2019]]></title><description><![CDATA[Today is the first day of a new year! Tons of fun.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 17 Jan 2019 18:59:12 GMT</lastBuildDate><item><title><![CDATA[Golang Error Checkers: os.IsExist vs os.IsNotExist]]></title><description><![CDATA[Recently I saw a line of code while working on the exercism cli: At first glance, it seems someone made a simple logic
+mistake that makes…]]></description><link>https://loganstucki.me//blog/2019-01-17GolangErrorCheckers/</link><guid isPermaLink="false">https://loganstucki.me//blog/2019-01-17GolangErrorCheckers/</guid><pubDate>Thu, 17 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Recently I saw a line of code while working on the exercism cli:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; err &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Lstat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;workspaceDir&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;IsNotExist&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;At first glance, it seems someone made a simple logic
+mistake that makes the code less readable. So I made a
+&lt;a href=&quot;https://github.com/exercism/cli/pull/787&quot;&gt;pull request&lt;/a&gt;
+suggesting this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; err &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Lstat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;workspaceDir&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;IsExist&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//...&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Looks like an easy enough change right? I didn&apos;t test it but when
+the CI job failed, I was shocked.&lt;/p&gt;
+&lt;h2&gt;Error checkers&lt;/h2&gt;
+&lt;p&gt;You may notice that the parameter passed into &lt;code class=&quot;language-text&quot;&gt;os.IsExist&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;os.IsNotExist&lt;/code&gt;
+is &lt;code class=&quot;language-text&quot;&gt;err&lt;/code&gt;. Normally, you might expect to pass the filepath instead.&lt;/p&gt;
+&lt;p&gt;Well, golang uses these as error checkers.&lt;/p&gt;
+&lt;p&gt;So with &lt;code class=&quot;language-text&quot;&gt;os.IsExist&lt;/code&gt;, it&apos;s actually checking for &lt;em&gt;errors that would appear
+if the file exists&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Let&apos;s say you&apos;re trying to create a file. The behavior you would expect is for
+the file to not exist, so if the file does it exist, the corresponding error
+would be thrown and you could use &lt;code class=&quot;language-text&quot;&gt;os.IsExist&lt;/code&gt; to check it.&lt;/p&gt;
+&lt;p&gt;On the contrary, &lt;code class=&quot;language-text&quot;&gt;os.IsNotExist&lt;/code&gt; checks for &lt;em&gt;errors that would occur if
+a file doesn&apos;t exist&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This is like the above example where we check if &lt;code class=&quot;language-text&quot;&gt;workspaceDir&lt;/code&gt; exists.&lt;/p&gt;
+&lt;p&gt;Since &lt;code class=&quot;language-text&quot;&gt;os.Lstat&lt;/code&gt; expects for it to exist already, it only throws an error
+if &lt;code class=&quot;language-text&quot;&gt;workspaceDir&lt;/code&gt; doesn&apos;t exist. Hence, the code used &lt;code class=&quot;language-text&quot;&gt;!os.IsNotExist(err)&lt;/code&gt;
+to check if an error had been thrown. &lt;code class=&quot;language-text&quot;&gt;os.IsExist(err)&lt;/code&gt; doesn&apos;t work
+since no error is thrown if the file exists because that is the expected
+behavior.&lt;/p&gt;
+&lt;h2&gt;!os.IsExist != os.IsNotExist&lt;/h2&gt;
+&lt;p&gt;So, the point of this post was to share my experience learning about these
+two functions. If you didn&apos;t read the whole thing, basically
+&lt;code class=&quot;language-text&quot;&gt;!os.IsExist != os.IsNotExist&lt;/code&gt;!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Plans for 2019]]></title><description><![CDATA[Today is the first day of a new year! Tons of fun.
 I'm going to outline some plans for this year. 1. Finish high school One more semester…]]></description><link>https://loganstucki.me//blog/2019-01-01NewYearPlans/</link><guid isPermaLink="false">https://loganstucki.me//blog/2019-01-01NewYearPlans/</guid><pubDate>Tue, 01 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Today is the first day of a new year! Tons of fun.
 I&apos;m going to outline some plans for this year.&lt;/p&gt;
 &lt;h3&gt;1. Finish high school&lt;/h3&gt;
