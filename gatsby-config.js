@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Logan Stucki',
     description: 'Blog and website of a 17 year-old computery kid',
-    siteUrl: 'https://loganstucki.me/'
+    siteUrl: 'https://loganstucki.me'
   },
   plugins: [
     {
@@ -151,6 +151,12 @@ module.exports = {
               }
             }
         }`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }]
       }
     }
 
