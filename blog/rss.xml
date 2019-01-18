@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 18 Jan 2019 14:02:43 GMT</lastBuildDate><item><title><![CDATA[Golang Error Checkers: os.IsExist vs os.IsNotExist]]></title><description><![CDATA[Recently I saw a line of code while working on the exercism cli: At first glance, it seems someone made a simple logic
-mistake that makes…]]></description><link>https://loganstucki.me//blog/2019-01-17GolangErrorCheckers/</link><guid isPermaLink="false">https://loganstucki.me//blog/2019-01-17GolangErrorCheckers/</guid><pubDate>Thu, 17 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Recently I saw a line of code while working on the exercism cli:&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Logan Stucki]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me</link><generator>RSS for Node</generator><lastBuildDate>Fri, 18 Jan 2019 14:44:17 GMT</lastBuildDate><item><title><![CDATA[Golang Error Checkers: os.IsExist vs os.IsNotExist]]></title><description><![CDATA[Recently I saw a line of code while working on the exercism cli: At first glance, it seems someone made a simple logic
+mistake that makes…]]></description><link>https://loganstucki.me/blog/2019-01-17GolangErrorCheckers/</link><guid isPermaLink="false">https://loganstucki.me/blog/2019-01-17GolangErrorCheckers/</guid><pubDate>Thu, 17 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Recently I saw a line of code while working on the exercism cli:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;go&quot;&gt;&lt;pre class=&quot;language-go&quot;&gt;&lt;code class=&quot;language-go&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; err &lt;span class=&quot;token operator&quot;&gt;:=&lt;/span&gt; os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;Lstat&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;workspaceDir&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;os&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;IsNotExist&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token comment&quot;&gt;//...&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -33,7 +33,7 @@ behavior.&lt;/p&gt;
 &lt;p&gt;So, the point of this post was to share my experience learning about these
 two functions. If you didn&apos;t read the whole thing, basically
 &lt;code class=&quot;language-text&quot;&gt;!os.IsExist != os.IsNotExist&lt;/code&gt;!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Plans for 2019]]></title><description><![CDATA[Today is the first day of a new year! Tons of fun.
-I'm going to outline some plans for this year. 1. Finish high school One more semester…]]></description><link>https://loganstucki.me//blog/2019-01-01NewYearPlans/</link><guid isPermaLink="false">https://loganstucki.me//blog/2019-01-01NewYearPlans/</guid><pubDate>Tue, 01 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Today is the first day of a new year! Tons of fun.
+I'm going to outline some plans for this year. 1. Finish high school One more semester…]]></description><link>https://loganstucki.me/blog/2019-01-01NewYearPlans/</link><guid isPermaLink="false">https://loganstucki.me/blog/2019-01-01NewYearPlans/</guid><pubDate>Tue, 01 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Today is the first day of a new year! Tons of fun.
 I&apos;m going to outline some plans for this year.&lt;/p&gt;
 &lt;h3&gt;1. Finish high school&lt;/h3&gt;
 &lt;p&gt;One more semester left of high school!&lt;/p&gt;
@@ -77,7 +77,7 @@ closer to home. I was also already accepted here.&lt;/p&gt;
 &lt;p&gt;My main concerns for this year are grades as I finish high school,
 and funding my college education.&lt;/p&gt;
 &lt;p&gt;Wish me luck! :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Thanksgiving: My Path to Open Source and Exercism]]></title><description><![CDATA[Today I'm thankful for exercism and my path to open source. I started programming when I was around 12 years old. Not sure what it
-was, but…]]></description><link>https://loganstucki.me//blog/2018-11-22Thanksgiving-MyPathToOpenSource/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-22Thanksgiving-MyPathToOpenSource/</guid><pubDate>Thu, 22 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Today I&apos;m thankful for exercism and my path to open source.&lt;/p&gt;
+was, but…]]></description><link>https://loganstucki.me/blog/2018-11-22Thanksgiving-MyPathToOpenSource/</link><guid isPermaLink="false">https://loganstucki.me/blog/2018-11-22Thanksgiving-MyPathToOpenSource/</guid><pubDate>Thu, 22 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Today I&apos;m thankful for exercism and my path to open source.&lt;/p&gt;
 &lt;p&gt;I started programming when I was around 12 years old. Not sure what it
 was, but I just had some driving curiosity to learn programming.
 I had read online about some language called Java so I wanted to learn that.
@@ -117,7 +117,7 @@ on my submitted solutions.&lt;/p&gt;
 to me. At 17, I can currently say that I have contributed to real-world projects.
 Exercism has helped me improve my programming skills as well, and I&apos;ve had several
 internships since then that I may not have had without.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Learning go and stuff]]></title><description><![CDATA[I've been looking at learning Go for a few days now. It feels similar to the time I've spent learning C++, but
-the syntax feels more python…]]></description><link>https://loganstucki.me//blog/2018-11-17LearningGoAndStuff/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-17LearningGoAndStuff/</guid><pubDate>Sat, 17 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I&apos;ve been looking at learning Go for a few days now.&lt;/p&gt;
+the syntax feels more python…]]></description><link>https://loganstucki.me/blog/2018-11-17LearningGoAndStuff/</link><guid isPermaLink="false">https://loganstucki.me/blog/2018-11-17LearningGoAndStuff/</guid><pubDate>Sat, 17 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I&apos;ve been looking at learning Go for a few days now.&lt;/p&gt;
 &lt;p&gt;It feels similar to the time I&apos;ve spent learning C++, but
 the syntax feels more python-like in a way.&lt;/p&gt;
 &lt;p&gt;I&apos;ve started finding it easier to pick up new languages.
@@ -139,7 +139,7 @@ library for.&lt;/p&gt;
 &lt;p&gt;But yeah, I felt like I needed to give javascript a break for
 a little bit. Maybe I&apos;ll do some more Java stuff soon or write
 something with python cause I never really use that.&lt;/p&gt;
-&lt;p&gt;Anyways that&apos;s it for now, I&apos;ll post again later.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why I Decided to Blog]]></title><description><![CDATA[Here's a short post. Why did I decide to blog? There's a couple of reasons. Lots of developers blog It's like journaling but public I felt…]]></description><link>https://loganstucki.me//blog/2018-11-12WhyIDecidedToBlog/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-12WhyIDecidedToBlog/</guid><pubDate>Mon, 12 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here&apos;s a short post.&lt;/p&gt;
+&lt;p&gt;Anyways that&apos;s it for now, I&apos;ll post again later.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Why I Decided to Blog]]></title><description><![CDATA[Here's a short post. Why did I decide to blog? There's a couple of reasons. Lots of developers blog It's like journaling but public I felt…]]></description><link>https://loganstucki.me/blog/2018-11-12WhyIDecidedToBlog/</link><guid isPermaLink="false">https://loganstucki.me/blog/2018-11-12WhyIDecidedToBlog/</guid><pubDate>Mon, 12 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here&apos;s a short post.&lt;/p&gt;
 &lt;p&gt;Why did I decide to blog?&lt;/p&gt;
 &lt;p&gt;There&apos;s a couple of reasons.&lt;/p&gt;
 &lt;ul&gt;
@@ -166,7 +166,7 @@ get busy sometimes. Especially with college and adult
 life coming up soon.&lt;/p&gt;
 &lt;p&gt;Anyways, talk to y&apos;all later.&lt;/p&gt;
 &lt;p&gt;Till then, Logan.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[That Time I Hacked a Quiz and Won 2.5k]]></title><description><![CDATA[So, you might be wondering about something I mention on
-the home page. hack an online stem trivia quiz and win lots of money even though I…]]></description><link>https://loganstucki.me//blog/2018-11-09ThatTimeIHackedAQuizAndWon2.5k/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-09ThatTimeIHackedAQuizAndWon2.5k/</guid><pubDate>Fri, 09 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;So, you might be wondering about something I mention on
+the home page. hack an online stem trivia quiz and win lots of money even though I…]]></description><link>https://loganstucki.me/blog/2018-11-09ThatTimeIHackedAQuizAndWon2.5k/</link><guid isPermaLink="false">https://loganstucki.me/blog/2018-11-09ThatTimeIHackedAQuizAndWon2.5k/</guid><pubDate>Fri, 09 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;So, you might be wondering about something I mention on
 the home page.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;hack an online stem trivia quiz and win lots of money even though I told them I hacked it&lt;/p&gt;
@@ -301,7 +301,7 @@ I was the only person with a score anywhere near that high. I was an outlier.&lt
 and they asked for a picture of me holding it. I sent them one a few weeks late cause I forgot.
 They thanked me, and I haven&apos;t heard
 from them since.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Github pages user page branch setup]]></title><description><![CDATA[So, setting up my new site, I decided to use github pages
-instead of hosting it on my server. Why? GitHub pages is free I can deploy my…]]></description><link>https://loganstucki.me//blog/2018-11-08GithubPagesUserPageBranchSetup/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-08GithubPagesUserPageBranchSetup/</guid><pubDate>Thu, 08 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;So, setting up my new site, I decided to use github pages
+instead of hosting it on my server. Why? GitHub pages is free I can deploy my…]]></description><link>https://loganstucki.me/blog/2018-11-08GithubPagesUserPageBranchSetup/</link><guid isPermaLink="false">https://loganstucki.me/blog/2018-11-08GithubPagesUserPageBranchSetup/</guid><pubDate>Thu, 08 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;So, setting up my new site, I decided to use github pages
 instead of hosting it on my server.&lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
 &lt;ul&gt;
@@ -359,7 +359,7 @@ the code branch when people visit the repo. Plus,
 when someone clones it, it clones the code branch
 by default.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Look ma I made a website]]></title><description><![CDATA[Poof, a website appeared! Cool right? I actually had a website before this.
 It looked kinda similar with the same colors and footer.
-The…]]></description><link>https://loganstucki.me//blog/2018-11-07LookMaIMadeAWebsite/</link><guid isPermaLink="false">https://loganstucki.me//blog/2018-11-07LookMaIMadeAWebsite/</guid><pubDate>Wed, 07 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Poof, a website appeared!&lt;/p&gt;
+The…]]></description><link>https://loganstucki.me/blog/2018-11-07LookMaIMadeAWebsite/</link><guid isPermaLink="false">https://loganstucki.me/blog/2018-11-07LookMaIMadeAWebsite/</guid><pubDate>Wed, 07 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Poof, a website appeared!&lt;/p&gt;
 &lt;p&gt;Cool right?&lt;/p&gt;
 &lt;p&gt;I actually had a website before this.
 It looked kinda similar with the same colors and footer.
