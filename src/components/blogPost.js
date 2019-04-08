@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "./layout";
 import Helmet from 'react-helmet'
+import Subscribe from "./subscribe";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -22,6 +23,7 @@ export default function Template({
       <div
         dangerouslySetInnerHTML={{ __html: html }}
       />
+      <Subscribe />
     </Layout>
   )
 }

@@ -6,6 +6,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=79453970d5b0a1077463498e0&amp;id=f29ce18a28'
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-74361554-3",

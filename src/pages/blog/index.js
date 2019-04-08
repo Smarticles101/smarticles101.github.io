@@ -2,6 +2,7 @@ import React from 'react'
 
 import Layout from '../../components/layout'
 import { Link, graphql } from 'gatsby';
+import Subscribe from '../../components/subscribe';
 
 const IndexPage = ({ data }) => (
   <Layout title="Blog">
@@ -12,8 +13,8 @@ const IndexPage = ({ data }) => (
     </Link>*/}
     <h1>Recent Posts</h1>
     {data.allMarkdownRemark.edges.map(({ node }) => (
-      <>
-        <Link key={node.id} to={node.fields.slug} style={{
+      <div key={node.id}>
+        <Link to={node.fields.slug} style={{
           textDecoration: 'none'
         }}>
           <div>
@@ -29,8 +30,9 @@ const IndexPage = ({ data }) => (
           </div>
         </Link>
         <hr />
-      </>
+      </div>
     ))}
+    <Subscribe />
   </Layout>
 )
 
