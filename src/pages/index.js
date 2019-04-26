@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => (
 
     <h2>About</h2>
     <p>
-      I am 17 years old. I write code and do computer things.
+      I am 18 years old. I write code and do computer things.
       Sometimes, I do crazy things like completely re-design the website
       I just made or hack an online stem trivia quiz and win lots of 
       money even though I told them I hacked it. Anyways, I just made this new site
