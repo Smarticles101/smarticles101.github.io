@@ -1,8 +1,7 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "./layout";
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from './layout'
 import Helmet from 'react-helmet'
-import Subscribe from "./subscribe";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -10,20 +9,11 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout title={"Blog post"}>
-      <Helmet
-        title={frontmatter.title}
-      />
-      <h3 style={{marginBottom: 0}}>
-        {frontmatter.title}
-      </h3>
-      <h4>
-        {frontmatter.date}
-      </h4>
-      <div
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-      <Subscribe />
+    <Layout title={'Blog post'}>
+      <Helmet title={frontmatter.title} />
+      <h3 style={{ marginBottom: 0 }}>{frontmatter.title}</h3>
+      <h4>{frontmatter.date}</h4>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }
