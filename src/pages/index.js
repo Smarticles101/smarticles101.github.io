@@ -7,14 +7,8 @@ const IndexPage = ({ data }) => (
   <Layout title="Home">
     <h1>Logan Stucki</h1>
 
-    <h2>About</h2>
     <p>
-      I am 18 years old. I write code and do computer things.
-      Sometimes, I do crazy things like completely re-design the website
-      I just made or hack an online stem trivia quiz and win lots of 
-      money even though I told them I hacked it. Anyways, I just made this new site
-      and I hope to fill it with lots of content. I'll be posting blog updates
-      every now and then about interesting computery things.
+      The thoughts and rants of a 19 year-old developer trying to figure out life.
     </p>
 
     <h3>Code</h3>
