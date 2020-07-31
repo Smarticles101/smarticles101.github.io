@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jul 2020 02:09:39 GMT</lastBuildDate><item><title><![CDATA[Static Analysis for Exercism.io in Java]]></title><description><![CDATA[Recently at exercism, we've been working on . The goal of the project is to use static analysis to provide automated mentoring
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[Blog and website of a 17 year-old computery kid]]></description><link>https://loganstucki.me</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jul 2020 03:19:23 GMT</lastBuildDate><item><title><![CDATA[What Does it Mean to be an Adult?]]></title><description><![CDATA[I'm only 19 but my mind is older. Most of my life I have waited for adulthood. It seems like something
+every kid dreams about: visions of…]]></description><link>https://loganstucki.me/blog/2020-07-31WhatDoesitMeantobeanAdult/</link><guid isPermaLink="false">https://loganstucki.me/blog/2020-07-31WhatDoesitMeantobeanAdult/</guid><pubDate>Fri, 31 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;I&apos;m only 19 but my mind is older.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most of my life I have waited for adulthood. It seems like something
+every kid dreams about: visions of being able to do whatever you want
+without people telling you otherwise. Countless times, my parents
+would promise me the ability to do something when I&apos;m older. They would
+brush it off and say &quot;wait until you&apos;re an adult,&quot; or &quot;maybe when you&apos;re
+older.&quot; This led me to a seemingly false notion that as soon as I turn
+18, I would become an adult and thus be able to do what I want.&lt;/p&gt;
+&lt;p&gt;From a strictly biological perspective, adult means to have reached
+sexual maturity. Girls can usually achieve this by 15-17 years old
+and boys usually do it by 16-17 years old. This seems to mostly fit
+Oxford&apos;s definition: &quot;a person who is fully grown or developed.&quot; Of
+course, your brain doesn&apos;t stop developing until about 25 years old.&lt;/p&gt;
+&lt;p&gt;Then there is legal adulthood. This is what I believe most people,
+especially those just graduating high school believe in. Most of the time,
+people reach legal adulthood at the age of 18. This is when a child&apos;s
+parents lose their parenting rights and can no longer make decisions
+for and in behalf of their child. The child is now legally responsible
+for themselves.&lt;/p&gt;
+&lt;p&gt;However, a special problem tends to arise with teens who become the age
+of majority. The teen mind is already one that is trying to become more
+independent. Because the frontal lobe is not fully developed yet, this
+is fuled largely out of emotion. Along with this engrained belief that
+they are an &quot;adult&quot; as soon as they turn 18, many teens will struggle
+with their parents at this point. &quot;Why should my parents be able to
+tell me what to do if I&apos;m an adult?&quot;&lt;/p&gt;
+&lt;p&gt;Perhaps this emotion-fuled desire for independence is what made me so
+upset when I insisted that I was an adult, but my aunt said &quot;You&apos;ll be
+an adult when you&apos;re married with kids.&quot; However, she might have a point.
+Among the things I wasn&apos;t taught in school, was the social construct of
+adulthood. Which, in fact, adults like my aunt seem to understand a lot
+better than I do.&lt;/p&gt;
+&lt;p&gt;Social adulthood is not defined anywhere. It is a subjective construct
+that is influenced by things such as culture, gender, race, social class,
+and ethnicity. Like my aunt said, marriage and parenthood are typical
+social markers of adulthood. Others include living away from family,
+completing your education, and starting a career. Social adulthood
+requires work. You have to put in some work to achieve markers for adulthood.
+If you don&apos;t others may not recognize you as such.&lt;/p&gt;
+&lt;p&gt;Perhaps these different definitions of adulthood help to explain how sometimes
+it feels as though people who are around my age experience parents believing
+they are adult enough for some things, but not for others. In the context
+of trying to go to the &quot;adult&quot; activites with relatives, I usually get shut down.
+Those are social activities and I probably don&apos;t fit the social definition of
+an adult quite yet. However, I have worked to develop applications before for Walmart.
+Was I adult enough for that? Yes, because I have a near adult level of knowledge
+required for that.&lt;/p&gt;
+&lt;p&gt;I believe that this is just one struggle that plagues college age students.
+We are legally adults, but not socially. So what are we? We aren&apos;t kids, we aren&apos;t
+adults. It is a weird limbo that&apos;s a mixture of both and honestly, it can be very
+frustrating at times, but perhaps that is my amygdala speaking instead of my frontal
+lobe.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Static Analysis for Exercism.io in Java]]></title><description><![CDATA[Recently at exercism, we've been working on . The goal of the project is to use static analysis to provide automated mentoring
 feedback to…]]></description><link>https://loganstucki.me/blog/2019-04-02StaticAnalysisInJava/</link><guid isPermaLink="false">https://loganstucki.me/blog/2019-04-02StaticAnalysisInJava/</guid><pubDate>Tue, 02 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Recently at exercism, we&apos;ve been working on &lt;code class=&quot;language-text&quot;&gt;project-auto-mentor&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The goal of the project is to use static analysis to provide automated mentoring
 feedback to students. This will free-up mentors more, making their job easier.
