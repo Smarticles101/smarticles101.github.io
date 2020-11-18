@@ -62,17 +62,7 @@ const Footer = () => {
         </div>
 
         <div>
-          {/**
-            * Hehehehehe copyrighted forevermore
-          */}
           &copy; Logan Stucki {year + (currentYear !== year ? " - " + currentYear : "")}
-        </div>
-
-        <div style={{
-          flex: 1,
-          textAlign: 'right'
-        }}>
-          <a href="/resume.pdf">Resume</a>
         </div>
       </div>
     </footer>
