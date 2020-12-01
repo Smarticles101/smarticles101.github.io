@@ -10,7 +10,9 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout title={'Blog post'}>
-      <Helmet title={frontmatter.title} />
+      <Helmet title={frontmatter.title}>
+      <script data-ad-client="ca-pub-3845309455501477" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      </Helmet>
       <h3 style={{ marginBottom: 0 }}>{frontmatter.title}</h3>
       <h4>{frontmatter.date}</h4>
       <div dangerouslySetInnerHTML={{ __html: html }} />
